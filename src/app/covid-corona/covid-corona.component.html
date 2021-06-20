@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="background-color:brown;height: 150px; width: 100%;">
+        Employee List
+
+    </h1>
+    <ul *ngFor="let employee of employees">
+        <li>{{employee.id}}-{{employee.name}}-{{employee.dept}}</li>
+    </ul>
+    <br>
+    <hr>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                <!-- <th attr.colspan="{{columnSpan}}"> -->
+                Employee Details
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>First Name</td>
+                <td>{{firstname}}</td>
+
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>{{lastname}}</td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td>{{age}}</td>
+            </tr>
+
+            <tr >
+                <td>Gender</td>
+                <td>{{gender}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+
